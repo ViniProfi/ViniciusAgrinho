@@ -260,15 +260,44 @@ a:focus {
     text-decoration: underline;
 }
 
+/* ========= RODAPÉ (Projeto Mudanças Climáticas) ========= */
 footer {
-    text-align: center;
-    padding: 30px 1rem; /* Aumentei padding do footer */
-    background-color: #3A5A40;
-    color: #FFFFFF;
-    margin-top: 50px; /* Aumentei espaço antes do footer */
+    text-align: center; /* Centraliza o .footer-content se ele for inline-block ou tiver largura definida */
+    padding: 30px 20px; /* Aumentei o padding vertical */
+    background-color: #3A5A40; /* Verde Floresta Profundo (cor do header daquele projeto) */
+    color: #F4F1EA; /* Off-white/Bege claro para texto (cor do body daquele projeto) */
+    margin-top: 50px; 
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.6; /* Melhor espaçamento entre linhas do rodapé */
 }
 
-footer p {
+.footer-content {
+    max-width: 800px; /* Limita a largura do conteúdo do rodapé */
+    margin: 0 auto; /* Centraliza o .footer-content se ele for mais estreito que o footer */
+}
+
+footer p { /* Estilo geral para parágrafos no footer */
+    margin-bottom: 8px; /* Pequeno espaço entre as linhas */
+    font-size: 0.95em;
+}
+
+footer p:last-child {
     margin-bottom: 0;
+}
+
+.footer-info {
+    font-weight: 600; /* Deixa o nome/turma um pouco mais destacado */
+    /* color: #FFFFFF;  Se quiser o nome mais branco que o contato */
+}
+
+.footer-contact a {
+    color: #A0522D; /* Cor Sienna (terracota) para o link de email (cor de destaque daquele projeto) */
+    text-decoration: none;
+    font-weight: normal; /* Peso normal para o link */
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+    color: #BC6C25; /* Tom mais claro do Sienna para hover */
+    text-decoration: underline;
 }
